@@ -1,4 +1,4 @@
-# Mind Innovative Solutions website refactor
+# Mind Innovative Solutions website
 
 A responsive one-page static website using the blue, black, and white colors from the supplied logos.
 
