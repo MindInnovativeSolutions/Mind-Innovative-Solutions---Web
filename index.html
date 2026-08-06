@@ -194,7 +194,13 @@
           </div>
         </div>
 
-        <form class="contact-form" action="mailto:info@mindinnov.com" method="post" enctype="text/plain">
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="0c459a95-8d49-40a0-a939-ffe2b50a6453" />
+          <input type="hidden" name="subject" value="New Inquiry - Mind Innovative Solutions" />
+          <input type="hidden" name="from_name" value="Mind Innovative Web Form" />
+          <input type="hidden" name="redirect" value="https://mindinnov.com/#thanks" />
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
+
           <div class="form-row">
             <label>Full name<input type="text" name="name" autocomplete="name" required /></label>
             <label>Phone<input type="tel" name="phone" autocomplete="tel" required /></label>
@@ -202,12 +208,18 @@
           <label>Email<input type="email" name="email" autocomplete="email" required /></label>
           <label>Service needed
             <select name="service">
-              <option>Security cameras</option><option>Access control / intercom</option><option>Networking / Wi-Fi</option><option>Low-voltage wiring</option><option>TV / audio-video</option><option>Smart home</option><option>Other</option>
+              <option>Security cameras</option>
+              <option>Access control / intercom</option>
+              <option>Networking / Wi-Fi</option>
+              <option>Low-voltage wiring</option>
+              <option>TV / audio-video</option>
+              <option>Smart home</option>
+              <option>Other</option>
             </select>
           </label>
           <label>Project details<textarea name="details" rows="5" placeholder="Describe the project, location, and preferred timing."></textarea></label>
+
           <button class="btn btn-primary full" type="submit">Send project details</button>
-          <p class="form-note">For production, connect this form to Formspree, HubSpot, Web3Forms, or your preferred CRM.</p>
         </form>
       </div>
     </section>
