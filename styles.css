@@ -28,7 +28,7 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round
 .nav-toggle { display: none; border: 0; background: transparent; padding: 8px; }
 .nav-toggle span { display: block; width: 25px; height: 2px; background: var(--ink); margin: 5px 0; }
 .hero { position: relative; overflow: hidden; padding: 96px 0 86px; background: linear-gradient(135deg,#f7fbff 0%,#fff 55%,#edf6ff 100%); }
-.hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 72px; }
+.hero-grid { position: relative; display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 72px; }
 .eyebrow { margin: 0 0 12px; color: var(--blue-deep); font-size: 13px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
 .eyebrow.light { color: #93c5fd; }
 h1,h2,h3,p { margin-top: 0; }
@@ -57,7 +57,7 @@ h3 { line-height: 1.25; }
 .float-one { left: 0; top: 100px; }
 .float-two { right: 4px; top: 190px; }
 .float-three { left: 45px; bottom: 80px; }
-.hero-orb { position:absolute; border-radius:50%; filter: blur(2px); opacity:.55; }
+.hero-orb { position:absolute; border-radius:50%; filter: blur(2px); opacity:.55; z-index: 0; }
 .hero-orb-one { width:180px; height:180px; background:#d9ecff; left:-70px; top:110px; }
 .hero-orb-two { width:230px; height:230px; border:1px solid #b7d8f4; right:-90px; bottom:-80px; }
 .proof-strip { border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:white; }
